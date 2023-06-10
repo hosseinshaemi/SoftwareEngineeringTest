@@ -15,3 +15,12 @@ jobs:
         node-version: 18
     - run: npm install
     - run: npm test
+    - name: Dockerize
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: hoseinshaemi/softwareengineeringtest
+        tags: v1, latest
+        registry: registry-url.io
+        dockerfile: mydockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
