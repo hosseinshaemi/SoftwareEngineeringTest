@@ -31,3 +31,7 @@ test('fact -5 is ', () => {
 test('fact 3 is ', () => {
   expect(fact.factorial(3)).toBe(6);
 });
+
+test('fact 4 is ', () => {
+    expect(fact.factorial(4)).toBe(24);
+  });
