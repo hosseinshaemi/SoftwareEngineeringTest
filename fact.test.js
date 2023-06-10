@@ -27,3 +27,7 @@ test('fact -5 is ', () => {
     'Error! Factorial for negative number does not exist.'
   );
 });
+
+test('fact 3 is ', () => {
+  expect(fact.factorial(3)).toBe(6);
+});
