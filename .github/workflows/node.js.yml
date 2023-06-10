@@ -19,6 +19,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: hoseinshaemi/softwareengineeringtest
+        registry: docker.io
         tags: v1, latest
         dockerfile: mydockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
